@@ -1,0 +1,22 @@
+{
+    "presets": [
+        "react"
+    ],
+    "env": {
+        "production": {
+            "plugins": [
+                "transform-remove-console",
+                ["react-remove-properties", { "properties": ["__testIdentifier"] }]
+            ]
+        },
+        "test": {
+            "presets": [
+                ["env", { "targets": { "node": "current", "modules": "true" } }]
+            ],
+            "plugins": [
+                "transform-es2015-modules-commonjs",
+                "transform-class-properties"
+            ]
+        }
+    }
+}

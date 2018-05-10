@@ -1,0 +1,26 @@
+{
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "globals": {
+        "fetch": false,
+        "FormData": false,
+        "$": false,
+        "document": false
+    },
+    "rules": {
+        "no-console": "off",
+        "max-len": [
+            "error",
+            {
+                "code": 135,
+                "tabWidth": 2,
+                "ignoreComments": true,
+                "ignoreTrailingComments": true,
+                "ignoreUrls": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true,
+                "ignoreRegExpLiterals": true
+            }
+        ]
+    }
+}
