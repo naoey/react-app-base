@@ -2,6 +2,10 @@
     "presets": [
         "react"
     ],
+    "plugins": [
+        "transform-class-properties",
+        "transform-decorators-legacy"
+    ],
     "env": {
         "production": {
             "plugins": [

@@ -22,6 +22,9 @@ module.exports = {
           },
           {
             loader: 'eslint-loader',
+            options: {
+              emitWarning: process.env.NODE_ENV === 'development',
+            },
           },
         ],
       },
